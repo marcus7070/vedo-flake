@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1605370193,
+        "narHash": "sha256-YyMTf3URDL/otKdKgtoMChu4vfVL3vCMkRqpGifhUn0=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5021eac20303a61fafe17224c087f5519baed54d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1604403191,
+        "narHash": "sha256-zA/CTy9mKYiaHLO0RnPNl9JZ1CMydn7E6XqoN5os6BU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "24c5059468026eb8df4c77e98192567378656bc3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "vedo": "vedo"
+      }
+    },
+    "vedo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606835679,
+        "narHash": "sha256-ublTEeTT09QfUBivDHrvisU2P1551pl4CiPs3jDrWRc=",
+        "owner": "marcomusy",
+        "repo": "vedo",
+        "rev": "af7553dc04283e001cb03f910cfaf00f4682eb86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "marcomusy",
+        "repo": "vedo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
