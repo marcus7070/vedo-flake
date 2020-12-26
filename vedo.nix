@@ -24,17 +24,6 @@ buildPythonPackage rec {
     substituteInPlace setup.py --replace '"vtk", ' ""
   '';
 
-  # preInstall = ''
-  #   echo $PYTHONPATH
-  #   export PYTHONPATH=$PYTHONPATH:${vtk}/${python.sitePackages}
-  #   echo ""
-  #   echo "now with vtk sitePackages added:"
-  #   echo $PYTHONPATH
-  #   echo ${python.pythonForBuild.interpreter}
-  #   ${python.pythonForBuild.interpreter} -c "import vtk;" && echo "successfully imported vtk"
-  #   ${python.pythonForBuild.interpreter} -m pip show vtk
-  # '';
-
   meta = with lib; {
     description = "A python module for scientific analysis of 3D objects based on VTK";
     homepage = "https://vedo.embl.es/";

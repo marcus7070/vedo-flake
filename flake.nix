@@ -15,7 +15,7 @@
       let pkgs = nixpkgs.legacyPackages.${system}; in rec {
         packages = {
           python37 = let packageOverrides = python-self : python-super: {
-            vedo = python-self.callPackage ./vedo.nix {
+            vedo = python-super.callPackage ./vedo.nix {
               src = inputs.vedo;
             };
             vtk = python-super.toPythonModule (pkgs.vtk.override {
